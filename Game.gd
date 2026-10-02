@@ -7,6 +7,6 @@ func _ready() -> void:
     Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func _unhandled_input(event: InputEvent) -> void:
-    if event.is_action_pressed("pause_menu"):
+    if event.is_action_pressed("ui_cancel"):
         pause_menu.toggle_pause()
         get_viewport().set_input_as_handled()
